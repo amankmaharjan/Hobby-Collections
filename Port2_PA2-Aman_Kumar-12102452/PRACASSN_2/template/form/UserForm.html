@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working Hour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    <link rel="stylesheet" type="text/css" href="../../category.css">
+    <style>
+        #content {
+            background: white;
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        @media screen and (max-width: 500px) {
+            #content {
+                margin: auto;
+            }
+        }
+
+        textarea input {
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body id="wrapper">
+<!--header for webpage containg navigation links and logos-->
+
+<nav>
+    <img src="../../logo.png" alt="logo"class="logo">
+    <ul>
+        <li><a href="../../index.html"> Home</a></li>
+        <li ><a href="../stamps/stamp.html"> Stamp</a></li>
+        <li><a href="../coins/coin.html"> Coins</a></li>
+        <li><a href="../antique/antique.html"> Antiques</a></li>
+        <li><a href="../origiami/origami.html"> Origami</a></li>
+        <li><a href="../working-hour/workingHour.html"> Business Hour</a></li>
+        <li class="current"><a href="#"> Registration</a></li>
+    </ul>
+</nav>
+
+<section id="content">
+    <h2> Contact Form</h2>
+    <div class="navbutton">
+        <a name="top" href="#footer" class="navContent">Go to Bottom</a>
+    </div>
+    <form action="../../index.html" method="post">
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <p><label for="name" class="contact">Name:</label><input name="name" id="name"></p>
+            <p><label for="email" class="contact">Email:</label><input name="email" id="email"></p>
+            <p><label for="phone" class="contact">Phone:</label><input  name="phone" id="phone"></p>
+            <p><label for="Nationality" class="contact">Nationality:</label><input size="10" name="Nationality"
+                                                                                   id="Nationality">
+                <label for="Age" class="contact">Age:</label><input type="number" min="10" max="100" size="10"
+                                                                    name="Age" id="Age">
+            </p>
+            <p>Gender:
+                <label for="Male">Male</label> <input type="radio" value="M" name="relocate" id="Male">
+                <label for="Female">Female</label> <input type="radio" value="F" name="relocate" id="Female"></p>
+            </p>
+
+        </fieldset>
+        <fieldset class="area">
+            <legend>Area(s) of Interest:</legend>
+
+            <p><input type="checkbox" name="jobtitle" value="ae" id="ae"/><label for="ae" class="area">Stamp</label>
+                <input type="checkbox" name="jobtitle" value="bd" id="bd"/><label for="bd" class="area">Coins</label>
+            </p>
+            <p><input type="checkbox" name="jobtitle" value="is" id="an"/><label for="an" class="area">Antiques</label>
+                <input type="checkbox" name="jobtitle" value="sm" id="sm"/><label for="sm" class="area">Origami</label>
+            <p><input type="checkbox" name="jobtitle" value="is" id="is"/><label for="is" class="area">Swimming</label>
+                <input type="checkbox" name="jobtitle" value="sm" id="tr"/><label for="tr"></label>
+                <input type="checkbox" name="jobtitle" value="sm" id="ms"/><label for="ms" class="area">Music</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comments</legend>
+            <p><textarea name="interests" rows="10">
+                Comments...
+                </textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type=submit value="Submit" class="md-button">
+            <input type="reset" value="Clear" class="md-button">
+        </p>
+
+    </form>
+    <div class="navbutton">
+        <a href="#top" class="navContent">Go to top</a>
+    </div>
+</section>
+<!--footer for the web page-->
+<footer id="footer">
+    <p>Copyright© </p>
+    <p> The images contained therein on this website were sourced from various internet websites. These images are not
+        used for profit or business purposes. Its sole purpose is for education. In the event that these images are
+        copyighted and ownership can be evidenced, please contact Andrew Chiou (a.chiou@cqu.edu.au) and the images will
+        be immediately removed from this archive.</p>
+</footer>
+</body>
+</html>

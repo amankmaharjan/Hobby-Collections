@@ -1,0 +1,16 @@
+Instruction:Design and develop a website,allow customers to obtain an overview of the shop layout
+keyword:
+Limiting:not an online shopping site.
+
+
+keyword:welcome message and
+        the following layout of the floor plan
+        #details of
+         the display sections with relevant categories with details of the
+         items.
+#clicks on any of the images of the items to obtain
+ further information on that image
+
+#if the visitor selects
+ an option to display business hours, a separate page should appear to
+ provide this information.

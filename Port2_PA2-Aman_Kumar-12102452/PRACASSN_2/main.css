@@ -1,0 +1,185 @@
+/*navigation styles*/
+nav {
+    background: #415AA4;
+    position:relative;
+    width: 100%;
+    text-align: center;
+    color:white;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 1%;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+}
+nav a:hover{
+   background:#FFF5C1;
+    padding:10px;
+    color:#264295;
+}
+nav .current a{
+    background:#264295;
+    padding:10px;
+}
+nav a:visited{
+    color:#F39d4d;
+}
+.logo{
+    width: 300px;
+}
+
+
+
+/*footer element properties*/
+#footer {
+    width:100%;
+    padding: 10px;
+    text-align: center;
+    background: #264295;
+    color: white;
+    clear:both;
+
+}
+/*base color=5f76bc*/
+/*main contenet section properties*/
+#maincontent {
+
+    background: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right:10px;
+}
+/*id for  welcome message section*/
+#welcome {
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    width: 50%;
+}
+
+/*button class for navigation links*/
+.button {
+    width: 115px;
+    height: 25px;
+    background: #264295;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+}
+/*button hover*/
+.button:hover{
+    background: #415AA4;
+}
+/*class for floor map  size and width*/
+.image-map {
+    background: url('floor_plan.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    float: right;
+}
+
+/*> will target elements which are DIRECT children of a particular element*/
+.image-map > a.map {
+    position: absolute;
+}
+/* wrapper class*/
+#wrapper {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: auto;
+}
+p{
+    font-family: "Times New Roman", Times, serif;
+
+}
+body{
+    color: #264295;
+}
+/*hide image*/
+.hiddenImage{
+    display: none;
+}
+
+/*css for Mobile view*/
+@media screen and (max-width: 500px) {
+    nav {
+        position: relative;
+        min-height: 40px;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 5px 0;
+        position: absolute;
+        margin: auto;
+        border: solid 2px #264295;
+        background: #889bd6 url(hamIcon.png) no-repeat 95% 40%/50px 40px;
+        border-radius: 5px;
+    }
+
+    nav li {
+        display: none;
+        margin: 0;
+    }
+
+    nav .current {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        padding: 5px 5px 5px 32px;
+        text-align: left;
+
+    }
+
+    nav .current a {
+        background: none;
+        color:#F39d4d ;
+    }
+
+    nav ul:hover {
+        background-image: none;
+    }
+
+    nav ul:hover li {
+        display: block;
+        margin: 0 0 5px;
+
+    }
+    nav a:hover{
+        background:#264295;
+    }
+    .logo{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-map {
+        width: 100px;
+        height: 100px;
+        display: none;
+        float: none;
+    }
+    .hiddenImage{
+        display: block;
+        margin-top:50px;
+        width: 100%;
+    }
+    .rightImage{
+        display: none;
+    }
+}

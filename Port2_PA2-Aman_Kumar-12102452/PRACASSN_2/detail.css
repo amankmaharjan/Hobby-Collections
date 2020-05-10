@@ -1,0 +1,13 @@
+/*     for displaying image right side*/
+.rightImage {
+    float: right;
+    border-radius: 20px;
+    width: 50%;
+    margin: 10px;
+}
+
+/*h1 style*/
+h1 {
+    font-weight: bold;
+    font-size: 40px
+}
